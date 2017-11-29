@@ -191,7 +191,7 @@ li{
 
 
 
-/*#task.unchecked{
-  text-decoration: none;
-  color: #666666
-}*/
+
+@media(max-width: 568px){
+  .navbar-item{display:none}
+}
