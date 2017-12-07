@@ -11,8 +11,42 @@
   <body>
 
     <div class="wrapper">
-      <div class="header">HEADER</div>
-      <div class="side-menu">Side menu</div>
+      <!-- Header -->
+      <div class="header">
+        <div class="navbar-container">
+                <div class="navbar-select-tasks">
+                  <select class="" name="">
+                    <option value="">جميع المهام</option>
+                    <option value="">Value2</option>
+                  </select>
+                </div>
+                <div class="navbar-select-search">
+                  <select class="search_dropdown" id="search" placeholder="بحث">
+                    <option value="">بحث</option>
+                    <option value="">Value2</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+      <div class="side-menu">
+        <!-- Sandwich Menu -->
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">
+          &times;
+        </a>
+        <div class="logo">
+        <a href="#">
+          <img src="/assets/logo.png" width="83px" height="32px" alt="">
+        </a>
+        </div>
+        <br>
+        <div class="side-menu-items">
+          <a href="#" id="tasks">
+            <h4><img src="" alt="">المهام</h4>
+          </a>
+        </div>
+      </div>
+      </div>
       <div class="content">CONTENT</div>
     </div>
 
