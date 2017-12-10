@@ -1,5 +1,18 @@
+var side_menu = document.getElementById('side-menu');
+var main = document.getElementById('main');
+var header_container = document.getElementById('header_container')
 
-// Desig Section
+
+function openSlideMenu() {
+    side_menu.style.width = '240px'
+    main.style.marginRight = '240px';
+}
+
+function closeSlideMenu() {
+  side_menu.style.width = '0';
+  main.style.marginRight = '0';
+}
+
 var task_1 = document.getElementById('task_1');
 function checked_1() {
     if (task_1.className == 'check' ) {
@@ -91,13 +104,3 @@ function checked_11() {
       task_11.className = 'check';
     }
 };
-// Sandwich Menu
-function openSlideMenu() {
-  document.getElementById('side-menu').style.width = '264px';
-  document.getElementById('main_area').style.marginRight = '264px';
-}
-
-function closeSlideMenu() {
-  document.getElementById('side-menu').style.width = '0';
-  document.getElementById('main_area').style.marginRight = '0';
-}

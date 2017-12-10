@@ -1,56 +1,171 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="en">
+<html dir="rtl" lang="ar">
   <head>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css" rel="stylesheet">
-    <title>Tam Test</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>tam test</title>
   </head>
   <body>
-
-    <div class="wrapper">
-      <!-- Header -->
-      <div class="header">
-        <div class="navbar-container">
-                <div class="navbar-select-tasks">
-                  <select class="" name="">
-                    <option value="">جميع المهام</option>
-                    <option value="">Value2</option>
-                  </select>
-                </div>
-                <div class="navbar-select-search">
-                  <select class="search_dropdown" id="search" placeholder="بحث">
-                    <option value="">بحث</option>
-                    <option value="">Value2</option>
-                  </select>
-                </div>
-              </div>
-        </div>
-      <div class="side-menu">
-        <!-- Sandwich Menu -->
-      <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">
-          &times;
-        </a>
-        <div class="logo">
-        <a href="#">
-          <img src="/assets/logo.png" width="83px" height="32px" alt="">
-        </a>
-        </div>
-        <br>
-        <div class="side-menu-items">
-          <a href="#" id="tasks">
-            <h4><img src="" alt="">المهام</h4>
+    <div class="container">
+      <div id="side-menu" class="side-nav"><!-- start side-nav -->
+        <div class="icon-close">
+          <a href="#"  onclick="closeSlideMenu()">
+            <img src="/assets/icon-close.svg" alt="">
           </a>
         </div>
-      </div>
-      </div>
-      <div class="content">CONTENT</div>
-    </div>
+        <div class="logo">
+          <img src="/assets/logo.png" alt="">
+        </div>
+        <div class="side-menu-items">
+          <div class="active">
+            <div class="side-menu-item-active">
+              <a href="#">
+                <img src="/assets/icon-list.svg" alt="">
+                <h4>المهام</h4>
+              </a>
+            </div>
+          </div>
+          <div class="side-menu-item-inactive">
+            <a href="#">
+              <img src="/assets/icon-user.svg" alt="">
+              <h4>الأعضاء</h4>
+            </a>
+          </div>
+          <div class="side-menu-item-inactive">
+            <a href="#">
+              <img src="/assets/icon-creditcard.svg" alt="">
+              <h4>الدفع و الفواتير</h4>
+            </a>
+          </div>
+          <div class="side-menu-item-inactive">
+            <a href="#">
+              <img src="/assets/icon-settings.svg" alt="">
+              <h4>إعدادات</h4>
+            </a>
+          </div>
+          <div class="current-user">
+            <img src="/assets/avatar.png" alt="">
+              <div class="current-user-name">
+                <h1>مهند الحاج<br><span>الشركة المحدودة</span></h1>
+              </div>
+              <div class="arrow-down">
+                <img src="/assets/icon-arrow-down-small.png" alt="">
+              </div>
+          </div>
+        </div>
+      </div><!-- end side-menu -->
 
 
+
+
+
+
+
+      <div id="main">
+        <header>
+          <div id="open_side_bar">
+            <a href="#" onclick="openSlideMenu()">
+              OPEN SIDEBAR
+            </a>
+          </div>
+          <ul class="container">
+          <li>
+          <select class="navbar-select-search" id="search" placeholder="بحث">
+          <option value="">بحث</option>
+          <option value="">Value2</option>
+          </select>
+          </li>
+          <li class="navbar-select-tasks">
+          <select class="navbar-select-tasks" name="">
+          <option value="">جميع المهام</option>
+          <option value="">Value2</option>
+          </select>
+          </li>
+          </ul>
+        </header>
+
+
+
+
+              <div class="container-design-header">
+                <h4>التصميم:</h4>
+              </div>
+                  <ul class="container-design-body">
+                    <li class="container-item">
+                      <a href="javascript:void(0)"  onclick="checked_1()"><img  src="/assets/icon-check.svg" alt=""></a>
+                      <h4 id="task_1">تصميم الشكل العام وتجهيز المهام وتسليمه</h4>
+                    </li>
+                    <li class="container-item">
+                      <a href="javascript:void(0)"  onclick="checked_2()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                      <h4 id="task_2">تحويل التصميم إلى HTML + CSS </h4>
+                      <div class="badge-tag">
+                        <h3>CSS</h3>
+                      </div>
+                    </li>
+                    <li class="container-item">
+                      <a href="javascript:void(0)"  onclick="checked_3()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                      <h4 id="task_3">جعل التصميم متجاوب مع المتصفحات الصغيرة (Responsive)</h4>
+                      <div class="badge-tag">
+                        <h3>CSS</h3>
+                      </div>
+                    </li>
+                    <li class="container-item">
+                      <a href="javascript:void(0)"  onclick="checked_4()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                      <h4 id="task_4">جعل التصميم متوافق كحد أدنى مع IE9</h4>
+                      <div class="badge-tag">
+                        <h3>Browsers</h3>
+                      </div>
+                    </li>
+                    <li class="container-item">
+                      <a href="javascript:void(0)"  onclick="checked_5()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                      <h4 id="task_5">استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</h4>
+                      <div class="badge-tag">
+                        <h3>SASS</h3>
+                      </div>
+                    </li>
+                </ul>
+
+
+            <div class="container-improvment-header">
+              <h4>تحسينات:</h4>
+            </div>
+            <ul class="container-design-body">
+              <li class="container-item">
+                <a href="javascript:void(0)"  onclick="checked_6()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                <h4 id="task_6">إمكانية إخفاء القائمة الجانبية</h4>
+              </li>
+              <li class="container-item">
+                <a href="javascript:void(0)"  onclick="checked_7()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                <h4 id="task_7">إمكانية تعليم المهام كمنتهية</h4>
+              </li>
+              <li class="container-item">
+                <a href="javascript:void(0)"  onclick="checked_8()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                <h4 id="task_8">إمكانية إعادة ترتيب المهام والمجموعات</h4>
+              </li>
+              <li class="container-item">
+                <a href="javascript:void(0)"  onclick="checked_9()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+                <h4 id="task_9">التوافقية مع أجهزة اللمس</h4>
+              </li>
+          </ul>
+
+          <div class="container-others-header">
+            <h4>أخرى:</h4>
+          </div>
+          <ul class="container-design-body">
+            <li class="container-item">
+              <a href="javascript:void(0)"  onclick="checked_10()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+              <h4 id="task_10">تسليم المشروع النهائي في git repository مع ملاحظة استخدام git-flow</h4>
+            </li>
+            <li class="container-item">
+              <a href="javascript:void(0)"  onclick="checked_11()"><img  src="/assets/icon-uncheck.svg" alt=""></a>
+              <h4 id="task_11">إمكانية تعليم المهام كمنتهية</h4>
+            </li>
+        </ul>
+
+
+        </div>
+      </div>
     <script src="js/index.js"></script>
   </body>
 </html>
